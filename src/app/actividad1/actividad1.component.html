@@ -1,0 +1,45 @@
+<h1 style="text-align: center;">Bienvenido a la Actividad 1!
+<hr>
+<br>
+<p>Lista de informacion</p>
+<table border="1" align="center">
+    <tr>
+      <td> ㅤㅤ Notas ㅤㅤ</td>
+    </tr>
+    
+    <tr *ngFor="let nota of notas" >  
+    <td >{{nota}}</td>
+</tr>
+    </table>
+<br>
+    <table border="1" align="center">
+        <tr>
+          <td>ㅤㅤ Sueldos ㅤㅤ</td>
+
+
+        <tr *ngFor="let sueldo of sueldos">
+            <td>{{sueldo}}</td>
+        </tr>
+        </table>
+<br>
+        <table border="1" align="center">
+            <tr>
+              <td>Actividades</td>
+            </tr>
+            
+            <tr *ngFor="let actividad of actividades">
+                <td>{{actividad}}</td>
+            </tr>
+            </table>
+        <br>
+        <table border="1" align="center">
+            <tr>
+                <td>Notas</td>
+                <td>Sueldos</td>
+                <td>Actividades</td>
+              </tr>
+        <tr *ngFor="let lista of [0,1,2,3,4]">
+            <td *ngFor="let tabla of listas">{{tabla[lista]}}</td>
+        </tr>
+    </table>
+</h1>
